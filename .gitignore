@@ -63,6 +63,5 @@ credentials.json
 darksky.json
 duplicate_calendar_work.py
 font_test.py
-g_cal.py
 time.py
 token.pickle
