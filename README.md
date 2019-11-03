@@ -69,7 +69,7 @@ Service file required the use of WorkingDirectory so that the scripts call the c
 
 Follow step 1 to enable the google calendar api and download the client cofiguration files from this [tutorial](https://developers.google.com/calendar/quickstart/python). Then run quickstart.py as seen in the tutorial or g_cal.py on a machine with a web browser. After that, your token.pickle will be created. Send the token.pickle file to the rpi using SCP following this [tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/scp.md). 
 
-### Darksky 
+### Create darksky.json 
 
 Sign up for a Darksky developer account [here](https://darksky.net/dev) and get your secret key. Create a json file named 'darksky.json' with the following information in the project directory. 
 
