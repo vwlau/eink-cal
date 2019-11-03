@@ -142,7 +142,7 @@ def main():
     screen_w = 640
     screen_h = 384
 
-    image = Image.new('1', (screen_w, screen_h), color=1)
+    image = Image.new('1', (screen_w, screen_h), 255)
 
     logging.info('Drawing calendar')
     draw = ImageDraw.Draw(image)
