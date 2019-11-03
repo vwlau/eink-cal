@@ -1,0 +1,11 @@
+[Unit]
+Description=Run ei_cal.py automatically
+After=netwwork.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/dir/where/ei_cal.py/is
+ExecStart=/{virtualenv dir}/bin/python3 ei_cal.py
+
+[Install]
+WantedBy=multi-user.target
