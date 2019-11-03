@@ -137,7 +137,7 @@ def draw_cal(draw, screen_w, screen_h, day_view_divider, cal_divider, today):
                     draw.polygon([(cal_left + day_w * (j + 1), cal_top + day_h * (i + 1)), 
                                   (cal_left + day_w * (j + 1) - arc_d/4, cal_top + day_h * (i + 1)), 
                                   (cal_left + day_w * (j + 1), cal_top + day_h * (i + 1) - arc_d/4)], 
-                                   fill=1)
+                                   fill=255)
             #put marker on today's date
             if this_month_cal[i][j].day == today.day:
                 marker_left = cal_left + marker_offset + day_w * j
@@ -145,7 +145,7 @@ def draw_cal(draw, screen_w, screen_h, day_view_divider, cal_divider, today):
                 marker_right = marker_left + marker_w
                 marker_bottom = marker_top + marker_h
                 filled_rounded_rect(draw, marker_left, marker_top, marker_right, marker_bottom, m_arc_d, 0)
-                draw.text((cal_left + num_w_offset - font_offset[0] + day_w * j, cal_top + num_h_offset - font_offset[1] + day_h * i), str(this_month_cal[i][j].day), fill=1, font=font16)
+                draw.text((cal_left + num_w_offset - font_offset[0] + day_w * j, cal_top + num_h_offset - font_offset[1] + day_h * i), str(this_month_cal[i][j].day), fill=255, font=font16)
             else:
                 draw.text((cal_left + num_w_offset - font_offset[0] + day_w * j, cal_top + num_h_offset - font_offset[1] + day_h * i), str(this_month_cal[i][j].day), font=font16)
 
@@ -203,7 +203,7 @@ def draw_two_day_view(draw, screen_w, screen_h, day_view_divider, hour_start, ho
                                 header_h + block_h * delta_from_start, 
                                 sep_coord + block_w * day_offset - 3, 
                                 header_h + block_h * (delta_from_start + event_length), 
-                                20, 1)
+                                20, 255)
             #draw rounded rect for event area
             rounded_rect(draw, day_view_divider + hour_label_w + block_w * day_offset + 4, 
                          header_h + block_h * delta_from_start, 

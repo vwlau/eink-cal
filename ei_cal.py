@@ -144,7 +144,7 @@ def main():
     screen_w = epd.width
     screen_h = epd.height
 
-    image = Image.new('1', (screen_w, screen_h), color=1)
+    image = Image.new('1', (screen_w, screen_h), 255)
 
     logging.info('Drawing calendar')
     draw = ImageDraw.Draw(image)
