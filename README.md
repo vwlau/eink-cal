@@ -21,6 +21,12 @@ It takes about a minute for the script to update the e-ink screen so a clock fun
 * ei_cal_test.py functions exactly the same as ei_cal but instead of outputing the drawn image to the e-ink screen, it displays the drawn image to the default image viewer. Used for debugging on a computer. 
 * quickstart.py is a lightly edited version of the one provided by Google in a tutorial mentioned below
 
+## Hardware 
+
+* Waveshare 7.5" e-ink Display with display driver HAT. Bought from [amazon](https://www.amazon.com/dp/B07DH55MGC/ref=cm_sw_r_tw_dp_U_x_gZhWDb2B86WGC).
+* Raspberry Pi Zero WH. Bought from my local [Microcenter](https://www.microcenter.com/product/502843/raspberry-pi-zero-wh---with-pre-soldered-headers)
+* 7"x5" picture frame. I just had one handy in my house but any 7"x5" frame should work. 
+
 ## Setup
 
 Get a local clone of this project 
