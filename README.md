@@ -11,6 +11,16 @@ Right half is the two day view showing work schedule which is pulled from Google
 
 It takes about a minute for the script to update the e-ink screen so a clock functionality was not included or considered.
 
+## How it works
+
+* epd7in5.py and epdconfig.py are files provided by Waveshare that are necessary to interface with the e-ink
+* g_cal.py searches for all events titled "Work" from today and tomorrow from Google Calendar
+* weather.py gets the weather forecast for today and tomorrow from Darksky
+* draw_cal.py defines some functions that are helpful for drawing different aspects of the calendar. It is also responsible for drawing the bottom left calendar view and right half two day view. 
+* ei_cal.py ties the above scripts together and draws the top left of the screen (date, weather icons, weather info). 
+* ei_cal_test.py functions exactly the same as ei_cal but instead of outputing the drawn image to the e-ink screen, it displays the drawn image to the default image viewer. Used for debugging on a computer. 
+* quickstart.py is a lightly edited version of the one provided by Google in a tutorial mentioned below
+
 ## Setup
 
 Get a local clone of this project 
