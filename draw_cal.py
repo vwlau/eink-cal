@@ -139,7 +139,7 @@ def draw_cal(draw, screen_w, screen_h, day_view_divider, cal_divider, today):
                                   (cal_left + day_w * (j + 1), cal_top + day_h * (i + 1) - arc_d/4)], 
                                    fill=255)
             #put marker on today's date
-            if this_month_cal[i][j].day == today.day:
+            if this_month_cal[i][j].day == today.day and this_month_cal[i][j].month == today.month:
                 marker_left = cal_left + marker_offset + day_w * j
                 marker_top = cal_top + marker_offset + day_h * i
                 marker_right = marker_left + marker_w

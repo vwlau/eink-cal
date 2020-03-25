@@ -62,10 +62,10 @@ def get_events(creds):
     if not events:
         pass
     for event in events:
-        if(event['summary'] == 'Work'):
-            start = event['start']['dateTime']
-            end = event['end']['dateTime']
-            events_list.append((event['summary'], start, end))
+        #if(event['summary'] == 'Work'):
+        start = event['start']['dateTime']
+        end = event['end']['dateTime']
+        events_list.append((event['summary'], start, end))
             #print(event['summary'], start, end)
 
     return events_list

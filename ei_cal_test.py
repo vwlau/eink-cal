@@ -122,9 +122,9 @@ def main():
 
     logging.info('Getting work events')
     try:
-        work_events = g_cal.get_events(creds)
+        all_events = g_cal.get_events(creds)
     except socket.timeout as e:
-        work_events = []
+        all_events = []
         logging.exception(e)
 
     logging.info('Getting weather')
@@ -181,7 +181,7 @@ def main():
     draw_cal.draw_cal(draw, screen_w, screen_h, day_view_divider, cal_divider, today)
 
     #draw the two day view on the right
-    draw_cal.draw_two_day_view(draw, screen_w, screen_h, day_view_divider, 7, 17, today, work_events)
+    draw_cal.draw_two_day_view(draw, screen_w, screen_h, day_view_divider, 7, 17, today, all_events)
 
     logging.info('Send to e-ink screen')
     #epd.display(epd.getbuffer(image))
